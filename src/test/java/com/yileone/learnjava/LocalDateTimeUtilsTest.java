@@ -85,4 +85,10 @@ public class LocalDateTimeUtilsTest {
         System.out.println(LocalDateTimeUtils.formatTime(LocalDateTimeUtils.getLastDayDetailOfMonth(LocalDateTime.now()),"yyyy年MM月dd日 HH:mm:ss"));
     }
 
+    @Test
+    public void longIdTest() {
+        long ll = (1568898426937L- 1420041600000L) << 22 | ( 2 << 17) | ( 1 << 12) | 0;
+        System.out.println("long值 = " + ll);
+    }
+
 }
