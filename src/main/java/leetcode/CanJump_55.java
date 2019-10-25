@@ -59,10 +59,13 @@ public class CanJump_55 {
         boolean result = false;
         for (int j = nums[i]; j > 0; j--) {
             if (i + j >= nums.length) {
+                // 跳过头了，回上一级减少1格再跳
                 continue;
             }
+            // 基于当前位置，往前跳 1~当前最大长度
             boolean temp = jump(nums, i + j);
             if (temp) {
+                // 当前位置有一种情况能够跳到最后一个位置 就返回true
                 result = temp;
                 break;
             }
