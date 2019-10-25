@@ -30,6 +30,22 @@ public class CanJump_55 {
     }
 
     public static boolean canJump(int[] nums) {
+        if(nums == null){
+            return false;
+        }
+        //pos表示需要到达的位置
+        int pos = nums.length - 1;
+        for (int i = nums.length - 2 ; i >= 0 ; i--) {
+            if(nums[i] + i >= pos){
+                // 若当前的位置能够跳到最后一个位置，则将当前位置定为目标位置，能跳到当前位置就能跳到最后一个位置
+                pos = i;
+            }
+        }
+        return pos == 0;
+    }
+
+
+    /*public static boolean canJump(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return true;
         }
@@ -71,5 +87,5 @@ public class CanJump_55 {
             }
         }
         return result;
-    }
+    }*/
 }
