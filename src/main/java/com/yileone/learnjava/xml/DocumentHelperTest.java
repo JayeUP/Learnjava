@@ -7,7 +7,8 @@ import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 
-public class DocumentHelperTest {
+public class
+DocumentHelperTest {
     public static void main(String[] args) {
         String xmlStr = "<?xml version = \"1.0\" encoding=\"UTF-8\" ?>\n" +
                 "<DOCUMENT>\n" +
