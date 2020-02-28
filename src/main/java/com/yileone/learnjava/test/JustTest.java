@@ -6,13 +6,21 @@ package com.yileone.learnjava.test;
  */
 public class JustTest {
     public static void main(String[] args) {
-        try {
+        /*try {
             Integer test = test();
             System.out.println("test = " + test);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+*/
+        Long time = 1575253766L;
+        time = 1575256192L;
+        long start = System.currentTimeMillis();
+        System.out.println("start = " + start);
+        System.out.println("差值1 = " + (start/1000 -time));
+        long end = System.currentTimeMillis();
+        System.out.println("end = " + end);
+        System.out.println("差值2 = " + (end/1000 -time));
     }
 
     public static Integer test() throws Exception {

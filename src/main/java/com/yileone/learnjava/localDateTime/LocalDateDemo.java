@@ -2,7 +2,6 @@ package com.yileone.learnjava.localDateTime;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
 public class LocalDateDemo {
